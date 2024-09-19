@@ -5,10 +5,15 @@ using UnityEngine;
 public class Ejercicio3_5 : MonoBehaviour
 {
     [SerializeField] float radio;
-    // Start is called before the first frame update
+    float PI = 3.14f;
+
+    
     void Start()
     {
-        
+        float circuferencia = 2 * PI * radio;
+        float areaDeLaCircuferencia = PI * radio * radio;
+        Debug.Log("La circuferencia es: " +  circuferencia);
+        Debug.Log("El area de la circuferencia es: " +  areaDeLaCircuferencia);
     }
 
     // Update is called once per frame
